@@ -31,18 +31,18 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonPressed(_ sender: UIButton) {
-       
-        /*let alertcontroller : UIAlertController = UIAlertController(title: "hola guapo", message: "me has pulados guapo" , preferredStyle: .alert)
+    
+        let theText = nameTextField.text!
+        
+        helloLabel.text = "Hola  \(theText), ¿Cómo estás?"
+        
+        let alertcontroller : UIAlertController = UIAlertController(title: "hola \(theText)", message: "me has pulsado guapo ❤️❤️❤️❤️😂😂😂😂😂, pulsa Ok para salir, o no 😉😍❤️🐷" , preferredStyle: .alert)
         
         let okAction : UIAlertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
         
         alertcontroller.addAction(okAction)
         
-        present(alertcontroller, animated: true, completion: nil)*/
-        
-        let theText = nameTextField.text!
-        
-        helloLabel.text = "Hola  \(theText), ¿Cómo estás?"
+        present(alertcontroller, animated: true, completion: nil)
         
     }
 
