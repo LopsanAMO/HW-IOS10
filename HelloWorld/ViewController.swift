@@ -9,10 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    @IBOutlet var helloLabel: UILabel!
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        helloLabel.text = ""
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,13 +31,15 @@ class ViewController: UIViewController {
 
     @IBAction func buttonPressed(_ sender: UIButton) {
        
-        let alertcontroller : UIAlertController = UIAlertController(title: "hola guapo", message: "me has pulados guapo" , preferredStyle: .alert)
+        /*let alertcontroller : UIAlertController = UIAlertController(title: "hola guapo", message: "me has pulados guapo" , preferredStyle: .alert)
         
         let okAction : UIAlertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
         
         alertcontroller.addAction(okAction)
         
-        present(alertcontroller, animated: true, completion: nil)
+        present(alertcontroller, animated: true, completion: nil)*/
+        
+        helloLabel.text = "Hola, ¿Cómo estás?"
         
     }
 
