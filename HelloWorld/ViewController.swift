@@ -24,6 +24,10 @@ class ViewController: UIViewController {
        
         let alertcontroller : UIAlertController = UIAlertController(title: "hola guapo", message: "me has pulados guapo" , preferredStyle: .alert)
         
+        let okAction : UIAlertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        
+        alertcontroller.addAction(okAction)
+        
         present(alertcontroller, animated: true, completion: nil)
         
     }
