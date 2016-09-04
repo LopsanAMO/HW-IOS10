@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var helloLabel: UILabel!
     
+    @IBOutlet var nameTextField: UITextField!
     
     
     
@@ -39,7 +40,9 @@ class ViewController: UIViewController {
         
         present(alertcontroller, animated: true, completion: nil)*/
         
-        helloLabel.text = "Hola, ¿Cómo estás?"
+        let theText = nameTextField.text!
+        
+        helloLabel.text = "Hola  \(theText), ¿Cómo estás?"
         
     }
 
