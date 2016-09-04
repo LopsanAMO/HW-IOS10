@@ -21,7 +21,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonPressed(_ sender: UIButton) {
-        print("Hemos pulsado el maldito boton")
+       
+        let alertcontroller : UIAlertController = UIAlertController(title: "hola guapo", message: "me has pulados guapo" , preferredStyle: .alert)
+        
+        present(alertcontroller, animated: true, completion: nil)
+        
     }
 
 }
